@@ -231,7 +231,20 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
+   var arr = []
+   var i = 1
+   do {
+      arr.push(num)
+      num = num + 2
+      i++
+      if(num === i){
+         return "Se interrumpió la ejecución"
+      }else{
+         return arr
+      }
+   } while (i <= 10);
 }
+breakStatement(4)
 
 function continueStatement(num) {
    // Iterar en un bucle aumentando en 2 el número recibido hasta un límite de 10 veces.
